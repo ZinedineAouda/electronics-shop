@@ -81,7 +81,7 @@ const AdminOrders = () => {
                   </td>
 
                   <td>
-                    <p>${order?.total}</p>
+                    <p>DZA {order?.total}</p>
                   </td>
 
                   <td>{ new Date(Date.parse(order?.dateTime)).toDateString() }</td>

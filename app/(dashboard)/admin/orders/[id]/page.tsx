@@ -365,11 +365,11 @@ const AdminSingleOrder = () => {
             </div>
           ))}
           <div className="flex flex-col gap-y-2 mt-10">
-            <p className="text-2xl">Subtotal: ${order?.total}</p>
-            <p className="text-2xl">Tax 20%: ${order?.total / 5}</p>
-            <p className="text-2xl">Shipping: $5</p>
+            <p className="text-2xl">Subtotal: DZA {order?.total}</p>
+            <p className="text-2xl">Tax 20%: DZA {order?.total / 5}</p>
+            <p className="text-2xl">Shipping: DZA 5</p>
             <p className="text-3xl font-semibold">
-              Total: ${order?.total + order?.total / 5 + 5}
+              Total: DZA {order?.total + order?.total / 5 + 5}
             </p>
           </div>
           <div className="flex gap-x-2 max-sm:flex-col mt-5">

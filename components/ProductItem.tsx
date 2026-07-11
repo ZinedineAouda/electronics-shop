@@ -54,7 +54,7 @@ const ProductItem = ({
             : "text-lg text-white font-semibold"
         }
       >
-        ${product.price}
+        DZA {product.price}
       </p>
 
   

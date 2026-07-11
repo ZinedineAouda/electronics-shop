@@ -271,7 +271,7 @@ const handleInputChange = (
                 {merchant.products.map((product) => (
                   <tr key={product.id} className="border-b hover:bg-gray-50">
                     <td className="py-4">{product.title}</td>
-                    <td className="py-4">${product.price / 100}</td>
+                    <td className="py-4">DZA {product.price / 100}</td>
                     <td className="py-4">{product.inStock}</td>
                     <td className="py-4">
                       <Link

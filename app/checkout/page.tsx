@@ -261,7 +261,7 @@ const CheckoutPage = () => {
         console.log('Note: Could not trigger notification refresh');
       }
       
-      toast.success("Order created successfully! You will be contacted for payment.");
+      toast.success("Order created successfully! You will pay on delivery.");
       setTimeout(() => {
         router.push("/");
       }, 1000);
@@ -377,7 +377,7 @@ const CheckoutPage = () => {
                     <p className="text-gray-500">x{product?.amount}</p>
                   </div>
                   <p className="flex-none text-base font-medium">
-                    ${product?.price}
+                    DZA {product?.price}
                   </p>
                 </li>
               ))}
@@ -386,20 +386,20 @@ const CheckoutPage = () => {
             <dl className="hidden space-y-6 border-t border-gray-200 pt-6 text-sm font-medium text-gray-900 lg:block">
               <div className="flex items-center justify-between">
                 <dt className="text-gray-600">Subtotal</dt>
-                <dd>${total}</dd>
+                <dd>DZA {total}</dd>
               </div>
               <div className="flex items-center justify-between">
                 <dt className="text-gray-600">Shipping</dt>
-                <dd>$5</dd>
+                <dd>DZA 5</dd>
               </div>
               <div className="flex items-center justify-between">
                 <dt className="text-gray-600">Taxes</dt>
-                <dd>${total / 5}</dd>
+                <dd>DZA {total / 5}</dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                 <dt className="text-base">Total</dt>
                 <dd className="text-base">
-                  ${total === 0 ? 0 : Math.round(total + total / 5 + 5)}
+                  DZA {total === 0 ? 0 : Math.round(total + total / 5 + 5)}
                 </dd>
               </div>
             </dl>
@@ -537,10 +537,10 @@ const CheckoutPage = () => {
                   </div>
                   <div className="ml-3">
                     <h3 className="text-sm font-medium text-blue-800">
-                      Payment Information
+                      Payment Method: Cash on Delivery (COD)
                     </h3>
                     <div className="mt-2 text-sm text-blue-700">
-                      <p>Payment will be processed after order confirmation. You will be contacted for payment details.</p>
+                      <p>You will pay for your order in cash upon delivery.</p>
                     </div>
                   </div>
                 </div>
